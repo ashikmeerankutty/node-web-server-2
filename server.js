@@ -31,7 +31,8 @@ app.use((req,res,next)=>{
 app.use((express.static(__dirname + '/public')));
 app.get('/',(req,res) => {
 	res.render('index.hbs',{
-		pageTitle : 'Welcome to my site'
+		pageTitle : 'Welcome to my site',
+		welcomeMessage : 'Welcome Message'
 	});
 
 });
